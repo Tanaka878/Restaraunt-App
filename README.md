@@ -1,84 +1,133 @@
-<<<<<<< HEAD
-# Restaraunt-App
-An app for ordering and making purchases in a restaraunt
-=======
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Food Ordering App
 
-# Getting Started
+This is a **React Native** application that allows users to order food from a restaurant seamlessly. The app provides features like account creation, login, food selection, and a streamlined checkout process to make food ordering convenient.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Features
 
-## Step 1: Start the Metro Server
+1. **User Authentication:**
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+   - Users can create an account or log in to access the app's features.
+   - Secure authentication ensures user data privacy.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+2. **Browse Menu:**
 
-```bash
-# using npm
-npm start
+   - Explore a wide range of food items categorized for easy navigation.
+   - View detailed descriptions, prices, and images of each food item.
 
-# OR using Yarn
-yarn start
+3. **Add to Cart:**
+
+   - Select food items and customize them with additional preferences (e.g., extra toppings, special instructions).
+   - Add selected items to the cart for review before checkout.
+
+4. **Cart Management:**
+
+   - Edit or remove items from the cart before proceeding to checkout.
+   - View total price and breakdown of selected items.
+
+5. **Order Placement:**
+
+   - Choose from multiple payment methods to complete the purchase.
+   - Receive a confirmation of the order along with an estimated delivery or preparation time.
+
+6. **Order History:**
+
+   - Access previous orders to reorder favorite meals with a single tap.
+
+7. **User Profile:**
+
+   - Update personal details, delivery address, and payment preferences.
+
+8. **Notifications:**
+
+   - Receive real-time updates on order status (e.g., preparation, out for delivery).
+
+9. **Search Functionality:**
+
+   - Quickly find specific food items or cuisines using the search bar.
+
+10. **Feedback and Ratings:**
+
+    - Leave reviews and ratings for food items or overall service.
+
+## Technologies Used
+
+- **React Native**: Framework for building cross-platform mobile applications.
+- **Redux**: For state management.
+- **React Navigation**: For seamless navigation between screens.
+- **Firebase**: For authentication and database (optional).
+- **Axios**: For API integration.
+- **Styled Components**: For styling the application.
+
+## Installation and Setup
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/yourusername/food-ordering-app.git
+   cd food-ordering-app
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the application:**
+
+   - For iOS:
+     ```bash
+     npx react-native run-ios
+     ```
+   - For Android:
+     ```bash
+     npx react-native run-android
+     ```
+
+## Folder Structure
+
+```
+food-ordering-app/
+├── src/
+│   ├── components/       # Reusable UI components
+│   ├── screens/          # App screens (e.g., Login, Menu, Cart, Profile)
+│   ├── navigation/       # Navigation configurations
+│   ├── redux/            # State management
+│   ├── services/         # API services
+│   └── utils/            # Utility functions
+├── assets/               # Images and static assets
+├── App.js                # Main application file
+├── package.json          # Project metadata
+└── README.md             # Project documentation
 ```
 
-## Step 2: Start your Application
+## Contributing
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+Contributions are welcome! To contribute:
 
-### For Android
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Description of changes"
+   ```
+4. Push the branch:
+   ```bash
+   git push origin feature-name
+   ```
+5. Open a Pull Request.
 
-```bash
-# using npm
-npm run android
+## License
 
-# OR using Yarn
-yarn android
-```
+This project is licensed under the [MIT License](LICENSE).
 
-### For iOS
+## Contact
 
-```bash
-# using npm
-npm run ios
+For inquiries or support, please reach out to:
 
-# OR using Yarn
-yarn ios
-```
+- **Email**: [m](mailto\:your-email@example.com)usungaretanaka\@gmail.com
+- **GitHub**: [https://github.com/Tanaka878](https://github.com/Tanaka878)
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
->>>>>>> cccbd33 (Initial commit)
